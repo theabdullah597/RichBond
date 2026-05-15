@@ -4,6 +4,8 @@ import AppRoutes from './routes/AppRoutes';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
+import AgeVerificationModal from './components/AgeVerificationModal';
+
 // Scroll to top on route change
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -18,6 +20,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <div className="app-container">
+        <AgeVerificationModal />
         <Navbar />
         <main>
           <AppRoutes />

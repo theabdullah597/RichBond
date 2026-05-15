@@ -1,0 +1,102 @@
+.age-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.age-modal-content {
+  background: rgba(10, 10, 10, 0.95);
+  padding: 50px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--glass-border);
+}
+
+.age-modal-logo {
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.age-modal-content h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.age-modal-content p {
+  color: var(--text-dim);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.age-modal-btns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-age-enter {
+  background: var(--accent);
+  color: var(--primary);
+  padding: 15px 40px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-age-enter:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+}
+
+.btn-age-exit {
+  background: transparent;
+  color: var(--text-dim);
+  border: 2px solid #ddd;
+  padding: 15px 40px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-age-exit:hover {
+  background: #f5f5f5;
+  color: var(--primary);
+}
+
+@media (max-width: 600px) {
+  .age-modal-content {
+    padding: 40px 20px;
+  }
+
+  .age-modal-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .age-modal-btns {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn-age-enter,
+  .btn-age-exit {
+    width: 100%;
+  }
+}
