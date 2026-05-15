@@ -53,10 +53,10 @@ const Footer = () => {
                 <FaEnvelope />
                 <a href="mailto:info@richbondlimited.uk" style={{ color: 'inherit', textDecoration: 'none' }}>info@richbondlimited.uk</a>
               </div>
-              <div className="contact-item">
+              {/* <div className="contact-item">
                 <FaClock />
                 <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
