@@ -17,7 +17,7 @@ export const products = [
     stock: 'In Stock',
     rating: 4.9,
     image: '/assets/products/lost_mary_bm600.png',
-    description: 'Genuine Lost Mary BM600 disposable vapes. Bulk box of 10 units. Various flavors available.',
+    description: 'Genuine Lost Mary BM600 disposable vapes. Bulk box of 10 units. Various flavours available.',
     features: ['600 Puffs', 'Genuine Product', '20mg Nic Salt', 'Compact Design']
   },
   {
@@ -50,7 +50,7 @@ export const products = [
     rating: 4.7,
     image: '/assets/products/happy_vibes.png',
     description: 'Twist system allowing 4 separate pods for extended vaping life.',
-    features: ['2400 Puffs', 'Twist Design', 'Multiple Flavors', 'Long Battery']
+    features: ['2400 Puffs', 'Twist Design', 'Multiple Flavours', 'Long Battery']
   },
 
   // Pre-filled Pods
@@ -62,7 +62,7 @@ export const products = [
     rating: 4.8,
     image: '/assets/products/ske_crystal_pods.png',
     description: 'Replacement pre-filled pods for the SKE Crystal Plus kit.',
-    features: ['2ml Capacity', 'Mesh Coil', 'Wide Flavor Range', 'TPD Compliant']
+    features: ['2ml Capacity', 'Mesh Coil', 'Wide Flavour Range', 'TPD Compliant']
   },
   {
     id: 7,
@@ -72,7 +72,7 @@ export const products = [
     rating: 4.9,
     image: '/assets/products/elf_bar_elfa.png',
     description: 'Latest QUAQ mesh coil technology pods for the ELFA Pro device.',
-    features: ['QUAQ Mesh', 'Flavor Purity', 'Leak Proof', 'Sustainability']
+    features: ['QUAQ Mesh', 'Flavour Purity', 'Leak Proof', 'Sustainability']
   },
 
   // E-Liquids
@@ -83,8 +83,8 @@ export const products = [
     stock: 'In Stock',
     rating: 4.9,
     image: '/assets/products/bar_juice.png',
-    description: '10ml Nic Salts designed to taste exactly like your favorite disposables.',
-    features: ['10ml TPD', '10mg/20mg Options', 'Disposable Style Flavor', 'UK Made']
+    description: '10ml Nic Salts designed to taste exactly like your favourite disposables.',
+    features: ['10ml TPD', '10mg/20mg Options', 'Disposable Style Flavour', 'UK Made']
   },
   {
     id: 9,
@@ -93,8 +93,8 @@ export const products = [
     stock: 'In Stock',
     rating: 4.8,
     image: '/assets/products/bar_juice.png',
-    description: 'Authentic Elux Legend flavors now available in 10ml nicotine salts.',
-    features: ['Nicotine Salt', '50/50 VG/PG', 'Fast Absorption', 'Flavor Intense']
+    description: 'Authentic Elux Legend flavours now available in 10ml nicotine salts.',
+    features: ['Nicotine Salt', '50/50 VG/PG', 'Fast Absorption', 'Flavour Intense']
   },
 
   // Electronics
@@ -156,8 +156,8 @@ export const products = [
     stock: 'In Stock',
     rating: 5.0,
     image: '/assets/products/ivg_2400.png',
-    description: 'Mega puff device with multiple flavor pods.',
-    features: ['10000 Puffs', 'Multi-pod', 'TPD Compliant', 'Flavor Swapping']
+    description: 'Mega puff device with multiple flavour pods.',
+    features: ['10000 Puffs', 'Multi-pod', 'TPD Compliant', 'Flavour Swapping']
   },
   {
     id: 16,
@@ -177,7 +177,7 @@ export const products = [
     rating: 4.9,
     image: '/assets/products/vaporesso_xros.png',
     description: 'Corex heating technology for XROS devices.',
-    features: ['Top Fill', 'Leak Resistance', 'Flavor Boost', 'Pack of 4']
+    features: ['Top Fill', 'Leak Resistance', 'Flavour Boost', 'Pack of 4']
   },
   {
     id: 18,
@@ -196,8 +196,8 @@ export const products = [
     stock: 'In Stock',
     rating: 4.9,
     image: '/assets/products/dinner_lady.png',
-    description: 'The award-winning lemon tart flavor.',
-    features: ['50ml Shortfill', 'High VG', 'Premium Quality', 'Iconic Flavors']
+    description: 'The award-winning lemon tart flavour.',
+    features: ['50ml Shortfill', 'High VG', 'Premium Quality', 'Iconic Flavours']
   },
   {
     id: 20,
@@ -206,7 +206,7 @@ export const products = [
     stock: 'In Stock',
     rating: 4.8,
     image: '/assets/products/nasty_juice.png',
-    description: 'The ultimate mango flavor from Nasty Juice.',
+    description: 'The ultimate mango flavour from Nasty Juice.',
     features: ['60ml Bottle', 'Award Winning', 'Low Mint', 'Unique Packaging']
   },
   {
@@ -226,8 +226,8 @@ export const products = [
     stock: 'In Stock',
     rating: 5.0,
     image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&q=80&w=800',
-    description: 'Industry-leading noise canceling headphones.',
-    features: ['Noise Canceling', '30h Battery', 'LDAC', 'Smart Features']
+    description: 'Industry-leading noise cancelling headphones.',
+    features: ['Noise Cancelling', '30h Battery', 'LDAC', 'Smart Features']
   },
   {
     id: 23,

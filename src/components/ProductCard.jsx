@@ -31,7 +31,7 @@ const ProductCard = ({ product, onQuickView }) => {
         <div className="product-meta">
           <div className="product-price">
             <span className="price-label">Price</span>
-            <span className="price-value" style={{ fontSize: '1rem' }}>Inquire via Email</span>
+            <span className="price-value" style={{ fontSize: '1rem' }}>Enquire via Email</span>
           </div>
         </div>
         <button className="btn-add-inquiry" onClick={() => navigate('/contact')}>

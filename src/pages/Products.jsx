@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiOutlineX, HiCheckCircle, HiOutlineShoppingCart } from 'react-icons/hi';
 import ProductCard from '../components/ProductCard';
@@ -15,20 +15,31 @@ const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const cat = params.get('category');
     const search = params.get('search');
     
-    if (cat) setSelectedCategory(cat);
+    // Determine the active category to filter by
+    const activeCategory = cat || 'All';
     
+    // Sync state with URL
+    if (selectedCategory !== activeCategory) {
+      setSelectedCategory(activeCategory);
+    }
+
     let result = [...products];
 
-    if (cat && cat !== 'All') {
-      result = result.filter(p => p.category.includes(cat));
-    } else if (selectedCategory !== 'All') {
-      result = result.filter(p => p.category.includes(selectedCategory));
+    const electronicsCategories = ['Headphones & Audio', 'Chargers & Power', 'Mobile Accessories', 'Smart Gadgets'];
+
+    if (activeCategory !== 'All') {
+      if (activeCategory === 'Electronics') {
+        result = result.filter(p => electronicsCategories.includes(p.category));
+      } else {
+        result = result.filter(p => p.category.includes(activeCategory));
+      }
     }
 
     if (search) {
@@ -49,7 +60,7 @@ const Products = () => {
     <div className="products-page">
       <div className="container">
         <SectionHeading 
-          subtitle="Wholesale Catalog" 
+          subtitle="Wholesale Catalogue" 
           title="Premium Product Range" 
         />
 
@@ -61,7 +72,7 @@ const Products = () => {
               <div className="filter-list">
                 <div 
                   className={`filter-item ${selectedCategory === 'All' ? 'active' : ''}`}
-                  onClick={() => setSelectedCategory('All')}
+                  onClick={() => navigate('/products')}
                 >
                   <div className="checkbox"></div> All Products
                 </div>
@@ -69,7 +80,7 @@ const Products = () => {
                   <div 
                     key={cat.id} 
                     className={`filter-item ${selectedCategory === cat.name ? 'active' : ''}`}
-                    onClick={() => setSelectedCategory(cat.name)}
+                    onClick={() => navigate(`/products?category=${encodeURIComponent(cat.name)}`)}
                   >
                     <div className="checkbox"></div> {cat.name}
                   </div>

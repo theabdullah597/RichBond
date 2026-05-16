@@ -44,7 +44,7 @@ const Home = () => {
             </p>
             <div className="hero-btns">
               <Link to="/products" className="btn-primary">
-                View Catalog <HiArrowRight />
+                View Catalogue <HiArrowRight />
               </Link>
               <Link to="/contact" className="btn-outline">
                 {" "}
@@ -94,7 +94,7 @@ const Home = () => {
               </div>
               <h3>Bulk Pricing</h3>
               <p>
-                Unbeatable wholesale rates designed to maximize your retail
+                Unbeatable wholesale rates designed to maximise your retail
                 margins and business growth.
               </p>
             </div>
@@ -115,7 +115,7 @@ const Home = () => {
               <h3>24/7 Support</h3>
               <p>
                 Dedicated account managers to assist with your wholesale orders
-                and technical inquiries.
+                and technical enquiries.
               </p>
             </div>
           </div>
@@ -162,26 +162,20 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="stats-section">
+      {/* Distribution Solutions Section */}
+      <section className="section section-gray" style={{ textAlign: "center" }}>
         <div className="container">
-          <div className="stats-grid">
-            <div className="stat-item">
-              <h2>1.5K+</h2>
-              <p>Products Available</p>
-            </div>
-            <div className="stat-item">
-              <h2>850+</h2>
-              <p>Retail Partners</p>
-            </div>
-            <div className="stat-item">
-              <h2>10+</h2>
-              <p>Years in Business</p>
-            </div>
-            <div className="stat-item">
-              <h2>50K+</h2>
-              <p>Orders Completed</p>
-            </div>
+          <SectionHeading
+            title="Trusted Wholesale & Retail Distribution Solutions"
+            centered={true}
+          />
+          <p style={{ maxWidth: "800px", margin: "0 auto 40px", fontSize: "1.2rem", color: "var(--text-dim)", lineHeight: "1.6" }}>
+            We provide reliable product sourcing and distribution solutions designed to help businesses grow efficiently with quality products and strong market support.
+          </p>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <Link to="/products" className="btn-primary" style={{ width: "fit-content" }}>
+              Explore Products
+            </Link>
           </div>
         </div>
       </section>

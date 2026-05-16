@@ -38,7 +38,7 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <div className="container">
-        <SectionHeading subtitle="Get In Touch" title="Wholesale Partnership Inquiries" />
+        <SectionHeading subtitle="Get In Touch" title="Wholesale Partnership Enquiries" />
 
         <div className="contact-grid">
           {/* Contact Information */}

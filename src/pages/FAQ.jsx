@@ -14,7 +14,7 @@ const faqData = [
       },
       {
         q: "What is the Minimum Order Quantity (MOQ)?",
-        a: "MOQs vary by product category. Typically, disposable vapes have an MOQ of 10 units per flavor, while mobile accessories may require larger quantities. You can see the specific MOQ for each item in our product catalog."
+        a: "MOQs vary by product category. Typically, disposable vapes have an MOQ of 10 units per flavour, while mobile accessories may require larger quantities. You can see the specific MOQ for each item in our product catalogue."
       },
       {
         q: "Do you offer tiered pricing for bulk orders?",
@@ -67,7 +67,7 @@ const FAQ = () => {
   return (
     <div className="faq-page">
       <div className="container">
-        <SectionHeading subtitle="Help Center" title="Frequently Asked Questions" />
+        <SectionHeading subtitle="Help Centre" title="Frequently Asked Questions" />
         
         <div className="faq-container">
           <div className="faq-tabs">

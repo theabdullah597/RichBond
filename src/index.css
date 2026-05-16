@@ -48,7 +48,6 @@ body {
 /* Extra guard for any accidental full-width/100vw overflow */
 #root, .app-container {
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 
