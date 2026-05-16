@@ -1,0 +1,51 @@
+.text-page {
+  padding: 100px 0;
+  background-color: var(--bg-white);
+  color: var(--primary);
+}
+
+.text-page-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.text-section {
+  margin-bottom: 40px;
+}
+
+.text-section h2 {
+  font-size: 1.5rem;
+  color: var(--accent);
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.text-section p {
+  font-size: 1.05rem;
+  color: var(--text-dim);
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.text-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.text-section ul li {
+  font-size: 1.05rem;
+  color: var(--text-dim);
+  line-height: 1.8;
+  margin-bottom: 5px;
+}
+
+.text-section a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.text-section a:hover {
+  color: var(--primary);
+}

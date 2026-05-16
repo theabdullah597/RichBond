@@ -53,18 +53,16 @@ const Footer = () => {
                 <FaEnvelope />
                 <a href="mailto:info@richbondlimited.uk" style={{ color: 'inherit', textDecoration: 'none' }}>info@richbondlimited.uk</a>
               </div>
-              {/* <div className="contact-item">
-                <FaClock />
-                <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
-              </div> */}
+
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} Richbondlimited. All Rights Reserved.</p>
-          <div className="footer-bottom-links" style={{ display: 'none' }}>
-            {/* Removed Privacy & Terms */}
+          <div className="footer-bottom-links">
+            <Link to="/terms">Terms & Conditions  </Link>
+            <Link to="/privacy"> Privacy Policy</Link>
           </div>
         </div>
       </div>
