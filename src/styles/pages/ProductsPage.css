@@ -115,7 +115,7 @@
 
 .modal-content {
   background: white;
-  width: 1000px;
+  width: min(1000px, 100%);
   max-width: 95%;
   max-height: 90vh;
   border-radius: 20px;
@@ -123,6 +123,7 @@
   overflow: hidden;
   position: relative;
 }
+
 
 .close-modal {
   position: absolute;

@@ -181,3 +181,12 @@
     font-size: 1.8rem;
   }
 }
+
+@media (max-width: 480px) {
+  /* Prevent negative offsets from causing horizontal overflow */
+  .image-badge {
+    right: 0;
+    bottom: 0;
+  }
+}
+
