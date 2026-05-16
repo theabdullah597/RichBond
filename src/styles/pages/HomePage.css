@@ -306,7 +306,21 @@
     text-align: center;
     padding: 40px 20px;
   }
+
+  .newsletter-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+  }
+
+  .btn-subscribe {
+    width: 100%;
+  }
 }
+
 
 @media (max-width: 768px) {
   .hero-content h1 {
@@ -324,6 +338,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
+
+  /* Prevent any accidental inline row from causing overflow */
+  .hero {
+    width: 100%;
+  }
+
   .section {
     padding: 60px 0;
   }
@@ -339,7 +359,16 @@
   .categories-grid {
     grid-template-columns: 1fr;
   }
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
   .stats-grid {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+
+/* Note: duplicate @media block removed (was identical). */
+
