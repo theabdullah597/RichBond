@@ -1,14 +1,50 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
+  HiOutlineBuildingStorefront,
   HiOutlineCheckBadge,
   HiOutlineGlobeAlt,
+  HiOutlineSparkles,
+  HiOutlineTruck,
   HiOutlineUserGroup,
 } from "react-icons/hi2";
 import SectionHeading from "../components/SectionHeading";
 import "../styles/pages/AboutPage.css";
 
 const About = () => {
+  const achievements = [
+    {
+      id: 1,
+      icon: HiOutlineTruck,
+      value: "25,000+",
+      label: "Orders Fulfilled",
+      description: "Successfully delivered wholesale orders across the UK.",
+    },
+    {
+      id: 2,
+      icon: HiOutlineUserGroup,
+      value: "1,200+",
+      label: "Retail Partners",
+      description: "Long-term partnerships with independent and chain retailers.",
+    },
+    {
+      id: 3,
+      icon: HiOutlineBuildingStorefront,
+      value: "300+",
+      label: "Top Brands",
+      description:
+        "A broad catalogue of trusted vape and consumer electronics brands.",
+    },
+    {
+      id: 4,
+      icon: HiOutlineSparkles,
+      value: "98%",
+      label: "Partner Retention",
+      description:
+        "Consistent service quality that keeps partners growing with us.",
+    },
+  ];
+
   return (
     <div className="about-page">
       {/* Hero */}
@@ -115,6 +151,39 @@ const About = () => {
                 mutual growth.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Achievements */}
+      <section className="section achievements-section">
+        <div className="container">
+          <SectionHeading
+            subtitle="Our Achievements"
+            title="Proven Results for Retail Partners"
+          />
+          <div className="achievements-grid">
+            {achievements.map((achievement) => {
+              const Icon = achievement.icon;
+
+              return (
+                <motion.div
+                  key={achievement.id}
+                  className="achievement-card"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4 }}
+                >
+                  <div className="achievement-icon">
+                    <Icon />
+                  </div>
+                  <h3>{achievement.value}</h3>
+                  <h4>{achievement.label}</h4>
+                  <p>{achievement.description}</p>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
