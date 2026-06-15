@@ -100,9 +100,10 @@
 .product-title {
   font-size: 1.1rem;
   font-weight: 700;
+  line-height: 1.4;
   margin-bottom: 15px;
   color: var(--primary);
-  height: 2.8rem;
+  height: 3.1rem;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;

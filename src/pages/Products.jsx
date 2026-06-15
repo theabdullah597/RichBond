@@ -32,14 +32,8 @@ const Products = () => {
 
     let result = [...products];
 
-    const electronicsCategories = ['Headphones & Audio', 'Chargers & Power', 'Mobile Accessories', 'Smart Gadgets'];
-
     if (activeCategory !== 'All') {
-      if (activeCategory === 'Electronics') {
-        result = result.filter(p => electronicsCategories.includes(p.category));
-      } else {
-        result = result.filter(p => p.category.includes(activeCategory));
-      }
+      result = result.filter(p => p.category.includes(activeCategory));
     }
 
     if (search) {

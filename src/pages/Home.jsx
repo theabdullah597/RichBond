@@ -60,7 +60,7 @@ const Home = () => {
         <div className="container">
           <SectionHeading
             subtitle="Premium Categories"
-            title="Explore Our Collections"
+            title="Our Top Categories"
           />
           <div className="categories-grid">
             {categories.map((cat) => (
