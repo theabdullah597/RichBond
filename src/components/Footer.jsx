@@ -30,11 +30,9 @@ const Footer = () => {
           <div className="footer-col">
             <h4>Categories</h4>
             <div className="footer-links">
-              <Link to="/products?category=Disposable Vapes">Disposable Vapes</Link>
-              <Link to="/products?category=TPD Big Puffs">TPD Big Puffs</Link>
-              <Link to="/products?category=Pre-filled Pods">Pre-filled Pods</Link>
-              <Link to="/products?category=E-Liquids">E-Liquids</Link>
+              <Link to="/products?category=Vapes">Vapes</Link>
               <Link to="/products?category=Electronics">Electronics</Link>
+              <Link to="/products?category=Beauty">Beauty</Link>
             </div>
           </div>
 
